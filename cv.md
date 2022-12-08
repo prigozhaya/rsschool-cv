@@ -7,7 +7,6 @@
 ### Contacts
 **Phone:** +375445331051
 
-
 **E-mail:** elizavetaprigozhaya@gmail.com
 
 [![N|Solid](https://i.ibb.co/54PLNpS/ion-logo-behance.png)](https://www.behance.net/Prigozhaya) [![N|Solid](https://i.ibb.co/ZLFcsJF/cib-telegram.png)](https://t.me/gorekorabl) [![N|Solid](https://i.ibb.co/93NftjB/bi-github.png)](https://github.com/prigozhaya)
@@ -50,17 +49,13 @@ function rot13(message) {
 
 **Belarusian State University of Informatics and Radioelectronics**
 
-
 2018 - 2022 Bachelor
-
 
 Specialty - information technology and management in technical systems
 
 **Educational Center for Programming and High Technologies "IT-Academy"**
 
-
 2020 - 2021
-
 
 Training in UI/UX design tools
 Web and mobile interface design
