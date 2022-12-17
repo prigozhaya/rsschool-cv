@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav">
+          <li><a href="#aboutme">About me</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#code">Code</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="document">
+        <div class="cv">
+          <section class="info">
+            <img src="/img/photo.png" alt="photo" style="padding-right: 50px">
+
+            <div class="artical">
+              <h2>Contacts</h2>
+
+              <hr>
+              <div class="conect">
+                <h3 style="margin-top: 20px">Phone:</h3>
+                <a href="tel:+375445331051"><p class="p-conect">+375445331051</p></a>
+              </div>
+              <div class="conect">
+                <h3 style="margin-top: 20px">E-mail:</h3>
+                <a href="mailto:elizavetaprigozhaya@gmail.com"><p class="p-conect">elizavetaprigozhaya@gmail.com</p></a>
+              </div>
+              <div class="social-media">
+                <a href="https://www.behance.net/Prigozhaya"><img src="/img/behance.svg" alt="behance"></a>
+                <a href="https://t.me/Enigma_chan" style="padding-left: 20px"><img src="/img/telegram.svg" alt="telegram"></a>
+                <a href="https://github.com/prigozhaya" style="padding-left: 20px"><img src="/img/github.svg" alt="github"></a>
+              </div>
+            </div>
+            <div class="artical">
+              <h2 style="margin-top: 0">Skills</h2>
+              <hr>
+              <ul class="skills">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript (Basic)</li>
+                <li>Figma</li>
+                <li>Adobe Photoshop</li>
+                <li>SQL</li>
+              </ul>
+            </div>
+
+            <div class="artical">
+              <h2 style="margin-top: 0">Languages</h2>
+              <hr>
+              <div class="conect">
+                <h3 style="margin-top: 20px">Russian</h3>
+                <p class="p-conect">Native</p>
+              </div>
+              <div class="conect">
+                <h3 style="margin-top: 20px">English</h3>
+                <p class="p-conect">
+                  Intermediate (B1) certificate of Streamline Language School
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="about">
+            
+            <div class="accent">
+              <h1 style="margin: 0">Prigozhaya Elizaveta</h1>
+              <h2 style="font-size: 24px;text-transform: capitalize;font-weight: 400; margin-top: 10px;">Junior Front-end Developer</h2>
+            </div>
+            <div class="container">
+              <div class="artical" id="aboutme">
+                <h2>About me</h2>
+                <hr>
+                <p>
+                  I have an analytical mind and a sense of taste. I am
+                  responsible and fast learner. I love to create beautiful
+                  solutions. I strive to design useful and attractive websites.
+                </p>
+              </div>
+
+              <div class="artical" id="education">
+                <h2>Education</h2>
+                <hr>
+
+                <h3>Belarusian State University of Informatics and Radioelectronics</h3>
+                <p style="margin-top: 10px; margin-bottom: auto">
+                  2018 - 2022 Bachelor
+                </p>
+                <p style="margin-top: 0">
+                  Specialty - information technology and management in technical
+                  systems
+                </p>
+
+                <h3>
+                  Educational Center for Programming and High Technologies
+                  "IT-Academy"
+                </h3>
+                <p style="margin-top: 10px; margin-bottom: auto">2020 - 2021</p>
+                <p style="margin-top: 0">
+                  Training in UI/UX design tools Web and mobile interface design
+                </p>
+              </div>
+
+              <div class="artical" id="code">
+                <h2>Code example</h2>
+                <hr>
+                <p>
+                  ROT13 is a simple letter substitution cipher that replaces a
+                  letter with the letter 13 letters after it in the alphabet.
+                  ROT13 is an example of the Caesar cipher. Create a function
+                  that takes a string and returns the string ciphered with
+                  Rot13. If there are numbers or special characters included in
+                  the string, they should be returned as they are. Only letters
+                  from the latin/english alphabet should be shifted, like in the
+                  original Rot13 "implementation".
+                </p>
+                <pre class="code"><code>
+function rot13(message) { 
+    let arr = message.split("");
+    for (let i in arr){ 
+        if (arr[i].match("^[a-zA-Z]+$")){ 
+        let code = arr[i]; 
+            if (code.match("^[n-zN-Z]+$")){ 
+            code = code.charCodeAt(0) - 13; 
+            } else {  
+            code = code.charCodeAt(0) + 13; 
+            }  
+        arr[i] = String.fromCharCode(code); 
+        }  
+    } 
+return arr.join("");                 
+}
+
+              </code></pre>
+              </div>
+              <div class="artical" id="projects">
+                <h2>Projects</h2>
+                <hr>
+                <ul>
+                  <li>
+                    Website for the company Electronic means and security
+                    systems
+                  </li>
+                </ul>
+                <a href="https://github.com/prigozhaya/ESSO.io" style="color: white;padding-left: 43px;text-decoration: underline;">ESSO</a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <a href="https://rs.school/js/"><img src="/img/RS.svg" alt="RS"></a>
+      <p>2022</p>
+      <a href="https://github.com/prigozhaya"><img src="/img/gitr.svg" alt="github"></a>
+    </footer>
+  </body>
+</html>
